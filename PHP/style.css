@@ -1,0 +1,17 @@
+body{
+    padding-top: 50px;
+}
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+    background-color: rgb(217, 221, 237);
+    border-radius: 20px;
+}
+h1{
+    text-align: center;
+}
+.form-group{
+    margin: 10px;
+}
