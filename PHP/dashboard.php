@@ -4,7 +4,7 @@ if (!isset ($_SESSION["user"])) {
     header("Location: Login.php");
 }else {
     $id = $_SESSION['id'];
-    $result = mysqli_query($koneksi, "SELECT * FROM tb_users WHERE id = $id");
+    $result = mysqli_query($connection, "SELECT * FROM tb_users WHERE id = $id");
     $row = mysqli_fetch_assoc($result);
 }
 ?>
@@ -23,4 +23,5 @@ if (!isset ($_SESSION["user"])) {
     <a href="logout.php" class ="btn btn-warning">Logout</a>
  </div>
 </body>
+
 </html>
